@@ -25,7 +25,7 @@ posts = {
 
 @app.route('/')  # '/' for the default page
 def home():
-    return render_template('index.html')
+    return render_template('index.html', image_link_var = image_link, user_bio_var = user_bio, posts_var = posts)
 
 
 @app.route('/about')  # '/' for the default page
